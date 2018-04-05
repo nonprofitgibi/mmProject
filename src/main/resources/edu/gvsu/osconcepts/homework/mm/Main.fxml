@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9"
+            fx:controller="edu.gvsu.osconcepts.homework.mm.controllers.Main">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onLoad" text="Load"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox HBox.hgrow="NEVER">
+                    <children>
+                        <Label fx:id="lbl0" text="Label"/>
+                        <Label fx:id="lbl1" text="Label"/>
+                        <Label fx:id="lbl2" text="Label"/>
+                        <Label fx:id="lbl3" text="Label"/>
+                        <Label fx:id="lbl4" text="Label"/>
+                        <Label fx:id="lbl5" text="Label"/>
+                        <Label fx:id="lbl6" text="Label"/>
+                        <Label fx:id="lbl7" text="Label"/>
+                        <HBox alignment="CENTER_RIGHT" spacing="3.0">
+                            <children>
+                                <Button fx:id="btnPrevious" mnemonicParsing="false" onAction="#onPrevious"
+                                        text="Previous"/>
+                                <Button fx:id="btnNext" mnemonicParsing="false" onAction="#onNext" text="Next"/>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <FlowPane fx:id="fpPrograms" hgap="2.0" vgap="2.0" HBox.hgrow="ALWAYS"/>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

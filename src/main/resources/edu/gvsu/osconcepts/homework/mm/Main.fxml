@@ -22,14 +22,14 @@
             <children>
                 <VBox HBox.hgrow="NEVER">
                     <children>
-                        <Label fx:id="lbl0" text="Label"/>
-                        <Label fx:id="lbl1" text="Label"/>
-                        <Label fx:id="lbl2" text="Label"/>
-                        <Label fx:id="lbl3" text="Label"/>
-                        <Label fx:id="lbl4" text="Label"/>
-                        <Label fx:id="lbl5" text="Label"/>
-                        <Label fx:id="lbl6" text="Label"/>
-                        <Label fx:id="lbl7" text="Label"/>
+                        <Label fx:id="lbl0" prefHeight="25.0" prefWidth="150.0" text="Label" VBox.vgrow="ALWAYS"/>
+                        <Label fx:id="lbl1" prefHeight="25.0" prefWidth="150.0" text="Label"/>
+                        <Label fx:id="lbl2" prefHeight="25.0" prefWidth="150.0" text="Label"/>
+                        <Label fx:id="lbl3" prefHeight="25.0" prefWidth="150.0" text="Label"/>
+                        <Label fx:id="lbl4" prefHeight="25.0" prefWidth="150.0" text="Label"/>
+                        <Label fx:id="lbl5" prefHeight="25.0" prefWidth="150.0" text="Label"/>
+                        <Label fx:id="lbl6" prefHeight="25.0" prefWidth="150.0" text="Label"/>
+                        <Label fx:id="lbl7" prefHeight="25.0" prefWidth="150.0" text="Label"/>
                         <HBox alignment="CENTER_RIGHT" spacing="3.0">
                             <children>
                                 <Button fx:id="btnPrevious" mnemonicParsing="false" onAction="#onPrevious"

@@ -9,17 +9,17 @@ class Frame(val id: Int) {
             return if (program == null)
                 "Free"
             else
-                "Owned by ${program?.id}"
+                "${if (program?.dataTable?.any { it.frame == id } == true) "Data" else "Text"} of ${program?.id}"
         }
 
     val color: Color
         get() {
             return when {
                 program?.dataTable?.any { it.frame == id } == true -> {
-                    program?.dataColor ?: Color.color(1.0, 1.0, 1.0)
+                    program?.color ?: Color.color(1.0, 1.0, 1.0)
                 }
                 program?.textTable?.any { it.frame == id } == true -> {
-                    program?.textColor ?: Color.color(1.0, 1.0, 1.0)
+                    program?.color ?: Color.color(1.0, 1.0, 1.0)
                 }
                 else -> Color.color(1.0, 1.0, 1.0)
             }

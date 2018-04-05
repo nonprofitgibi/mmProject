@@ -48,6 +48,8 @@ public class Process {
         assert tcFrameID != null : "fx:id=\"tcFrameID\" was not injected: check your FXML file 'Process.fxml'.";
 
         lblProcessId.setText(String.format("Process ID: %d", Main.newest.getId()));
+        lblProcessId.setStyle(String.format("-fx-background-color: %s; -fx-text-fill: %s",
+                Main.colorToHex(Main.newest.getColor()), Main.colorToInverseHex(Main.newest.getColor())));
 
         for (Page p : Main.newest.getTextTable()) {
             pages.add(new PageWrapper(p, "Text"));

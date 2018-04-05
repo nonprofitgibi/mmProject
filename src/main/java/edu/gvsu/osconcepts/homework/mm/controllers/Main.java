@@ -146,7 +146,8 @@ public class Main {
             Frame f = MemoryManager.INSTANCE.getFrames().get(i);
             Label l = labels.get(i);
             l.setText(f.getText());
-            l.setStyle(String.format("-fx-background-color: %s;-fx-text-color: %s", colorToHex(f.getColor()),
+            // High contrast color from background to text color
+            l.setStyle(String.format("-fx-background-color: %s; -fx-text-fill: %s", colorToHex(f.getColor()),
                     colorToInverseHex(f.getColor())));
         }
     }

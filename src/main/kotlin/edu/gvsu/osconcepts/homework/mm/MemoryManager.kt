@@ -27,8 +27,8 @@ object MemoryManager {
     }
 
     private fun deallocate(id: Int): Program {
-        programs[id]?.dataTable?.forEach { freeFrames.push(frames[it.frame]) }
         programs[id]?.textTable?.forEach { freeFrames.push(frames[it.frame]) }
+        programs[id]?.dataTable?.forEach { freeFrames.push(frames[it.frame]) }
         programs[id]?.allocated = false
         return programs.remove(id)!!
     }

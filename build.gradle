@@ -16,6 +16,9 @@ apply plugin: 'java'
 apply plugin: 'kotlin'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'edu.gvsu.osconcepts.homework.mm.FxApplication'
 
 sourceCompatibility = 1.8
 

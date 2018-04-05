@@ -73,9 +73,9 @@ public class Main {
 
     public static String colorToInverseHex(Color color) {
         return String.format("#%02X%02X%02X",
-                (int) ((color.getRed() * 255) - 255) * (-1),
-                (int) ((color.getGreen() * 255) - 255) * (-1),
-                (int) ((color.getBlue() * 255) - 255) * (-1));
+                (int) (color.getBlue() == 1 ? 0 : color.getBlue() * 255),
+                (int) (color.getRed() == 1 ? 0 : color.getRed() * 255),
+                (int) (color.getGreen() == 1 ? 0 : color.getGreen() * 255));
     }
 
     @FXML

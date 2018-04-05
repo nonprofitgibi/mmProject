@@ -5,7 +5,7 @@ import java.util.*
 object MemoryManager {
     val programs: HashMap<Int, Program> = HashMap()
     val frames: List<Frame> = (0..7).map { Frame(it) }
-    const val frameSize = 512 * 8
+    const val frameSize = 512
     private val freeFrames: Stack<Frame> = Stack()
 
     init {

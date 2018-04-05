@@ -139,6 +139,7 @@ public class Main {
 
         redrawFrames();
         btnNext.disableProperty().setValue(true);
+        btnPrevious.setVisible(false);
     }
 
     private void redrawFrames() {
